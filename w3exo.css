@@ -18,6 +18,14 @@ body {
   color:#be123c;
 }
 
+/* 
+    The four layers
+Content - text or media inside the element.
+Padding - space between content and border; inherits background.
+Border - stroke around padding and content.
+Margin - outer spacing that separates the element from neighbors.
+*/
+
 /* Attribute selectors
 a[target="_blank"] - links that open in a new tab.
 input[type="email"] - email inputs.
