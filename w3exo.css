@@ -8,10 +8,20 @@ header, footer {
   color:#fff;
   padding:32px;
 }
+.hero {
+  background:url("images/gradient.jpg") center/cover no-repeat;
+  padding:120px 24px;
+  color:#fff;
+}
 nav a {
   color:#7dd3fc;
   margin-right:16px;
   text-decoration:none;
+}
+img.responsive {
+  max-width:100%; 
+  height:auto; 
+  border-radius:16px;
 }
 main {
   max-width:960px;
