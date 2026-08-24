@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de température JS</title>
+     <style>
+        #btn1{
+            font-size: 20px;
+            padding: 8px 16px;
+            border-radius: 15px;
+            background: linear-gradient(blue, indigo);
+            color: #fff;
+        }
+        #btn2{
+            font-size: 20px;
+            padding: 8px 16px;
+            border-radius: 15px;
+            background: linear-gradient(rgb(236, 154, 154), rgb(177, 65, 65));
+            color: #fff;
+        }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="Convertir une température de Celsius à Farenheit">
+    <button id="btn1">Convertir en °F</button>
+    <button id="btn2">Convertir en °C</button>
+
+    <script>
+        const btn1 = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+        btn1.addEventListener("click", ()=> {
+            const inputValue = document.querySelector("input").value;
+            const celsius = (inputValue * 9/5) + 32;
+            alert(inputValue + "°C = " + celsius + "°F");
+        });
+        btn2.addEventListener("click", ()=> {
+            const inputValue = document.querySelector("input").value;
+            const farenheit = (inputValue - 32) * 5/9;
+            alert(inputValue + "°F = " + farenheit + "°C");
+        });
+    </script>
+</body>
+</html>
