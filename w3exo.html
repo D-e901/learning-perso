@@ -1,77 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Structured Page</title>
-  <link rel="stylesheet" href="w3exo.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="w3exo.css">
 </head>
 <body>
-  <header>
-    <h1>Sky Labs</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero" id="services">
-        <img class="responsive" src="1094304409483752939.jpg" alt="Workspace">      
-      <h2>Services</h2>
-      <p>We craft responsive websites and design systems.</p>
-    </section>
-
-    <nav class="site-nav" aria-label="Primary">
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
-        <dl class="glossary">
-            <dt>HTML</dt>
-            <dd>Structure of a webpage.</dd>
-            <dt>CSS</dt>
-            <dd>Presentation and layout.</dd>
-        </dl>
-    </nav>
-
-    <section id="team">
-        <h2>Team</h2>
-        <p>Meet the engineers and designers who make it happen.</p>
-
-        <table class="pricing">
-            <thead>
-                <tr>
-                <th scope="col">Plan</th>
-                <th scope="col">Price</th>
-                <th scope="col">Features</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">Starter</th>
-                <td>$0</td>
-                <td>Basic components</td>
-                </tr>
-                <tr>
-                <th scope="row">Pro</th>
-                <td>$19</td>
-                <td>Advanced layouts</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <article class="story">
-        <h1>A Future with HTML & CSS</h1>
-        <p class="lead">Learn once, build everywhere.</p>
-        <p>We explore accessible patterns, responsive layouts, and component libraries.</p>
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2025 Sky Labs. Built with HTML & CSS.</p>
-  </footer>
+    <form>
+        <h1>Feedback</h1>
+        <label for="fullname">Name</label>
+        <input id="fullname" name="fullname" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </body>
 </html>

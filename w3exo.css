@@ -1,93 +1,45 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family:"Poppins",sans-serif;
+  background:#f4f6fb;
   margin:0;
-  background:#f1f5f9;
-}
-header, footer {
-  background:#0b1120;
-  color:#fff;
-  padding:32px;
-}
-.hero {
-  background:url("images/gradient.jpg") center/cover no-repeat;
-  padding:120px 24px;
-  color:#fff;
-}
-nav a {
-  color:#7dd3fc;
-  margin-right:16px;
-  text-decoration:none;
-}
-img.responsive {
-  max-width:100%; 
-  height:auto; 
-  border-radius:16px;
 }
 main {
-  max-width:960px;
-  margin:0 auto;
-  padding:40px 24px;
-}
-section {
-  background:#fff;
-  padding:24px;
-  border-radius:12px;
-  margin-bottom:24px;
-}
-.story {
-  max-width:680px; 
-  margin:80px auto; 
+  max-width:520px; 
+  margin:60px auto; 
   padding:0 24px;
 }
-.story h1 {
-  font-size:2.75rem; 
-  line-height:1.15; 
-  margin-bottom:12px;
-}
-.story .lead {
-  font-size:1.25rem; 
-  color:#4b5563; 
-  margin-bottom:24px;
-}
-.story p {
-  line-height:1.8;
-}
-
-.site-nav ul {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.site-nav a {
-  display: block;
-  padding: 12px 20px;
-  border-radius: 999px;
-  text-decoration: none;
-  color: #0f172a;
-  font-weight: 600;
-}
-.site-nav a:hover, .site-nav a.active {
-  background: #04AA6D;
-  color: #fff;
-}
-
-.pricing {
-  width:100%; 
-  border-collapse:collapse; 
+form {
   background:#fff; 
+  padding:32px; 
+  border-radius:16px; 
+  box-shadow:0 18px 40px rgba(15,23,42,0.12); 
+  display:grid; 
+  gap:18px;
+}
+label {
+  font-weight:600; 
+  color:#1f2937;
+}
+input, textarea {
+  border:1px solid #d0d8e4; 
   border-radius:12px; 
-  overflow:hidden;
+  padding:12px 14px; 
+  font-size:1rem;
 }
-.pricing th, .pricing td {
-  padding:16px 20px; 
-  text-align:left;
+input:focus, textarea:focus {
+  border-color:#6366f1; 
+  outline:none; 
+  box-shadow:0 0 0 3px rgba(99,102,241,0.25);
+} 
+button {
+  background:#6366f1; 
+  color:#fff; 
+  border:none; 
+  padding:12px 20px; 
+  border-radius:999px; 
+  font-weight:600; 
+  cursor:pointer;
 }
-.pricing thead {
-  background:#04AA6D; 
-  color:#fff;
-}
-.pricing tbody tr:nth-child(even) {
-  background:#f9fafb;
+button:hover {
+  background:#4f46e5;
 }
