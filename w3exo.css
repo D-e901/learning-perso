@@ -1,27 +1,32 @@
 body {
-  font-family:"Source Sans Pro",sans-serif; 
-  margin:0; 
-  background:#f0f4ff; 
-  color:#0f172a;
-}
-header {
-  background:#6366f1; 
-  color:#fff; 
-  padding:60px 24px; 
-  text-align:center;
-}
-main {
-  max-width:720px; 
-  margin:0 auto; 
-  padding:40px 24px;
+  font-family:"Inter",sans-serif; 
+  padding:40px; 
+  background:#f4f6fb;
 }
 .card {
-  background:#fff; 
-  border-radius:16px; 
   padding:24px; 
-  margin-bottom:24px; 
-  box-shadow:0 15px 35px rgba(15,23,42,0.12);
-} 
-.card h2 {
-  margin-top:0;
+  border-radius:16px; 
+  background:#fff;
 }
+.card p {
+  color:#475569;
+}
+.card.highlight p {
+  color:#2563eb;
+}
+#feature.card p {
+  color:#be123c;
+}
+
+/* Attribute selectors
+a[target="_blank"] - links that open in a new tab.
+input[type="email"] - email inputs.
+[class^="icon-"] - classes starting with "icon-".
+*/
+
+/* Combinators
+.card p - descendant selector.
+.card > h3 - direct child.
+h2 + p - adjacent sibling.
+h2 ~ p - general sibling.
+*/
